@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAFAFA;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('/img/subdivision-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+    .hero-content h1, .hero-content p {
+        color: white;
+    }
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar stays on top */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+.contact-section {
+    text-align: center;
+    color: #6D4C1E;
+    background-color: #FEFAE0;
+    padding: 50px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contact-content {
+    background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 600px;
+}
+
+.contact-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact-section h5 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #D4A373;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+}
+
+.btn-brochure {
+    background-color: #A67C52;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+    .btn-brochure:hover {
+        background-color: #8B5E34;
+    }
+
+.login-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('/images/subdivision-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+    .login-container h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #6D4C1E;
+    }
+
+    .login-container input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .login-container button {
+        width: 100%;
+        padding: 12px;
+        background-color: #A67C52;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+        .login-container button:hover {
+            background-color: #8B5E34;
+        }
+
+.register-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+    .register-link a {
+        color: #6D4C1E;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
