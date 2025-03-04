@@ -1,0 +1,181 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Ensures page uses the site's layout
+}
+
+<section id="about" class="container mt-5">
+    <div class="row align-items-center">
+        <!-- Left Text Content -->
+        <div class="col-md-6">
+            <h1 class="fw-bold">Discover Celeste Prime's Essence</h1>
+            <p class="lead">
+                At Celeste Prime, we believe in creating a community that embodies elegance and comfort.
+                Our subdivision, founded in <strong>2020</strong>, is designed to foster connections among residents
+                while providing a high quality of life.
+            </p>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h3 class="fw-bold">100%</h3>
+                    <p>Community engagement ensures every voice is heard.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold">5 years</h3>
+                    <p>Committed to sustainability for future generations.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold">4 values</h3>
+                    <p>Community Engagement, Quality Living, Sustainability, and Integrity.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold">Meet Our Team</h3>
+                    <p>Get to know the people making Celeste Prime a better place.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="col-md-6 text-center">
+            <img src="~/images/about.jpg" alt="Celeste Prime Community" class="img-fluid rounded shadow-lg">
+        </div>
+    </div>
+</section>
+    <!-- Discover Our Story Section (Inside a Container with Matching Background & White Text) -->
+    <section class="story-section">
+        <div class="container">
+        <h2 class="text-dark text-left">Discover Our Story</h2>
+        <p class="text-dark text-center">
+                At Celeste Prime, we are dedicated to creating a vibrant community where residents can thrive.
+                Our mission is to foster a sense of belonging and quality living for all homeowners.
+            </p>
+
+            <div class="row text-center text-white mt-4">
+                <div class="col-md-4">
+                    <h4>Our History</h4>
+                    <p>
+                        Founded in 2020, Celeste Prime was developed to create a harmonious living environment
+                        that balances luxury and comfort.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Our Mission</h4>
+                    <p>
+                        We strive to provide a beautiful and welcoming community where residents can enjoy a high quality of life.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Our Values</h4>
+                    <p>
+                        We believe in Community Engagement, Quality Living, Sustainability, and Integrity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="team" class="container mt-5">
+    <h2 class="fw-bold text-center">Meet the People Behind Celeste Prime</h2>
+    <p class="text-center lead">The visionaries, developers, and managers ensuring our community thrives.</p>
+
+    <div class="row justify-content-center mt-4">
+        <!-- Founder / Owner -->
+        <div class="col-md-3 text-center">
+            <img src="~/images/elven.jpg" class="team-img rounded-circle shadow-sm" alt="Founder">
+            <h4 class="fw-bold mt-3">Elven Diaz</h4>
+            <p class="text-muted">Founder & CEO</p>
+            <p>Elven envisioned Celeste Prime as a model of excellence in community living.</p>
+        </div>
+
+        <!-- Admin -->
+        <div class="col-md-3 text-center">
+            <img src="~/images/claire.jpg" class="team-img rounded-circle shadow-sm" alt="Admin">
+            <h4 class="fw-bold mt-3">Claire Gabato</h4>
+            <p class="text-muted">Website Administrator</p>
+            <p>Claire ensures the website runs smoothly, managing security and user accounts.</p>
+        </div>
+
+        <!-- Creator -->
+        <div class="col-md-3 text-center">
+            <img src="~/images/caynne.jpg" class="team-img rounded-circle shadow-sm" alt="Creator">
+            <h4 class="fw-bold mt-3">Caynne Panibon</h4>
+            <p class="text-muted">Website Creator & Developer</p>
+            <p>Caynne designed and developed the Celeste Prime website, ensuring its efficiency.</p>
+        </div>
+
+        <!-- Management Team -->
+        <div class="col-md-3 text-center">
+            <img src="~/images/vylette.jpg" class="team-img rounded-circle shadow-sm" alt="Manager">
+            <h4 class="fw-bold mt-3">Vylette Casinillo</h4>
+            <p class="text-muted">Community Manager</p>
+            <p>Vylette leads our operations, making Celeste Prime a better place for all residents.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Add Custom Styles -->
+<style>
+    #about, #team {
+        padding: 60px 0;
+    }
+
+    h1, h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    p.lead {
+        font-size: 1.2rem;
+        color: #555;
+    }
+
+    .fw-bold {
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .team-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 3px solid #ddd;
+    }
+
+    .text-muted {
+        color: #777;
+    }
+
+    /* Discover Our Story Section */
+    .story-section {
+        background-color: #f4f4f4; /* Adjust this if needed */
+        padding: 60px 20px;
+    }
+
+        .story-section h2,
+        .story-section p,
+        .story-section h4 {
+            color: #333; /* Darker text color for better contrast */
+        }
+
+
+    .story-details {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+        .story-details div {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .story-details h4 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+</style>

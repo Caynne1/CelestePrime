@@ -17,13 +17,18 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
+// Add custom route for HomesForSale
+app.MapControllerRoute(
+    name: "homes",
+    pattern: "HomesForSale",
+    defaults: new { controller = "HomesForSale", action = "Index" });
+
+// Default route
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

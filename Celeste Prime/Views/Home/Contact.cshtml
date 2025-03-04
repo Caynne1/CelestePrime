@@ -1,23 +1,56 @@
 ﻿@{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Contact Us";
 }
 
-<div class="container mt-5 contact-section">
-    <div class="contact-content mx-auto">
-        <h1>Get in Touch</h1>
-        <p>To better serve you, kindly contact us to schedule a visit or discuss any inquiries, concerns, or questions you may have about owning a home at Celeste Prime.</p>
+<style>
+    .contact-container {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 50px 0;
+    }
 
-        <h5><strong>BUSINESS HOURS</strong></h5>
-        <p>9:00 AM to 6:00 PM Monday - Friday<br>Send Inquiry Form 24/7</p>
+    .contact-item {
+        width: 30%;
+    }
 
-        <h5><strong>CONTACT DETAILS</strong></h5>
-        <p>+63 970 670 7777<br><a href="mailto:hello@celesteprime.ph">hello@celesteprime.ph</a></p>
+        .contact-item i {
+            font-size: 40px;
+            color: black;
+            margin-bottom: 10px;
+        }
 
-        <h5><strong>FIND US HERE</strong></h5>
-        <p>11STU Avenir, Archbishop Reyes Ave,<br>Cebu City, Cebu 6000</p>
+        .contact-item h3 {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-        <div class="text-center mt-4">
-            <a href="/documents/brochure.pdf" class="btn btn-brochure" download>Download Our Brochure</a>
-        </div>
+        .contact-item p {
+            font-size: 16px;
+            color: #333;
+        }
+
+    .highlight {
+        font-weight: bold;
+    }
+</style>
+
+<div class="contact-container">
+    <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <h3>Email Us</h3>
+        <p>For any inquiries, email us at <strong>info@celesteprime.com</strong>. We're here to assist you with any questions.</p>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <h3>Call Us</h3>
+        <p>You can contact us at <span class="highlight">+1 (555) 123-4567</span>. Our team is ready to help you.</p>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Visit Us</h3>
+        <p>Find us at <span class="highlight">123 Celeste Way, Guadalupe, Cebu City</span>. We welcome your visit!</p>
     </div>
 </div>

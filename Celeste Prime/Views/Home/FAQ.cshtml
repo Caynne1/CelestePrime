@@ -1,0 +1,247 @@
+﻿@{
+    ViewData["Title"] = "FAQs";
+}
+
+<style>
+    body {
+        font-family: "Arial", sans-serif;
+        color: #333;
+    }
+
+    .faq-container, .hoa-container, .involve-container {
+        max-width: 1100px;
+        margin: 80px auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .faq-left, .hoa-left, .involve-left {
+        flex: 1;
+    }
+
+    .faq-header, .hoa-header, .involve-header {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .faq-subtext, .hoa-subtext, .involve-subtext {
+        font-size: 20px;
+        max-width: 500px;
+        line-height: 1.6;
+    }
+
+    .faq-button, .hoa-button, .involve-button {
+        margin-top: 30px;
+        padding: 12px 24px;
+        font-size: 18px;
+        border: 1px solid #333;
+        background: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .faq-button:hover, .hoa-button:hover, .involve-button:hover {
+            background: #333;
+            color: white;
+        }
+
+    .faq-right, .hoa-right {
+        flex: 1.5;
+    }
+
+    .faq-box, .hoa-box {
+        border-bottom: 1px solid #333;
+        padding: 20px 0;
+        cursor: pointer;
+    }
+
+        .faq-box h3, .hoa-box h3 {
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+        }
+
+        .faq-box p, .hoa-box p {
+            display: none;
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .faq-box.active p, .hoa-box.active p {
+            display: block;
+        }
+
+    /* Get Involved Section */
+    .involve-container {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .involve-button {
+        background: #3e4a3f;
+        color: white;
+        border: none;
+    }
+
+        .involve-button:hover {
+            background: #2d382f;
+        }
+
+    /* Community Activities Section */
+    .activities-container {
+        max-width: 1100px;
+        margin: 80px auto;
+        text-align: center;
+    }
+
+    .activities-header {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .activities-subtext {
+        font-size: 20px;
+        color: #333;
+        max-width: 700px;
+        margin: 0 auto 40px;
+        line-height: 1.6;
+    }
+
+    .activities-box {
+        border-top: 1px solid #333;
+        padding: 20px 0;
+        text-align: left;
+        cursor: pointer;
+    }
+
+        .activities-box:last-child {
+            border-bottom: 1px solid #333;
+        }
+
+        .activities-box h3 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #3e4a3f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .activities-box p {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+            display: none;
+            line-height: 1.5;
+        }
+
+        .activities-box.active p {
+            display: block;
+        }
+</style>
+
+<!-- FAQs Section -->
+<div class="faq-container">
+    <div class="faq-left">
+        <h1 class="faq-header">FAQs</h1>
+        <p class="faq-subtext">Explore our frequently asked questions to find answers about community rules, amenities, and events that enhance your living experience at Celeste Prime.</p>
+        <button class="faq-button">View More</button>
+    </div>
+
+    <div class="faq-right">
+        <div class="faq-box">
+            <h3>What are the HOA rules? <span>▼</span></h3>
+            <p>The HOA rules are designed to maintain the community’s aesthetic and ensure a harmonious living environment for all residents.</p>
+        </div>
+
+        <div class="faq-box">
+            <h3>How are community events organized? <span>▼</span></h3>
+            <p>Community events are organized by the HOA to foster engagement among residents and provide opportunities for social interaction.</p>
+        </div>
+
+        <div class="faq-box">
+            <h3>What amenities are available? <span>▼</span></h3>
+            <p>Celeste Prime offers a variety of amenities including parks, walking trails, and recreational facilities for residents to enjoy.</p>
+        </div>
+    </div>
+</div>
+
+<!-- HOA Guidelines Section -->
+<div class="hoa-container">
+    <div class="hoa-left">
+        <h1 class="hoa-header">HOA Guidelines</h1>
+        <p class="hoa-subtext">Discover essential information about our community’s rules and regulations to ensure a harmonious living experience.</p>
+    </div>
+
+    <div class="hoa-right">
+        <div class="hoa-box">
+            <h3>General Rules <span>▼</span></h3>
+            <p>Understand the basic rules that all residents must follow to maintain community standards.</p>
+        </div>
+
+        <div class="hoa-box">
+            <h3>Pet Policies <span>▼</span></h3>
+            <p>Learn about our pet policies, including breed restrictions and leash requirements.</p>
+        </div>
+
+        <div class="hoa-box">
+            <h3>Noise Regulations <span>▼</span></h3>
+            <p>Find out about noise regulations to ensure a peaceful environment for all residents.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Get Involved Section -->
+<div class="involve-container">
+    <h1 class="involve-header">Get Involved</h1>
+    <p class="involve-subtext">Join our community meetings to stay informed and engaged.</p>
+    <button class="involve-button">Join Now</button>
+</div>
+
+<!-- Community Activities Section -->
+<div class="activities-container">
+    <h1 class="activities-header">Community Activities</h1>
+    <p class="activities-subtext">Discover the various events and activities that bring our community together, fostering connections and engagement among residents.</p>
+
+    <div class="activities-box">
+        <h3 onclick="toggleActivity(this)">Event Scheduling <span>▲</span></h3>
+        <p>Learn how events are scheduled and what types of activities are available for residents.</p>
+    </div>
+
+    <div class="activities-box">
+        <h3 onclick="toggleActivity(this)">Participation Guidelines <span>▲</span></h3>
+        <p>Find out how you can participate in community events and what is expected from attendees.</p>
+    </div>
+
+    <div class="activities-box">
+        <h3 onclick="toggleActivity(this)">Feedback and Suggestions <span>▲</span></h3>
+        <p>Share your thoughts on past events and suggest new activities for the community.</p>
+    </div>
+</div>
+
+
+<script>
+     function toggleActivity(element) {
+        let parent = element.parentElement;
+        let arrow = element.querySelector("span");
+        let paragraph = parent.querySelector("p");
+
+        parent.classList.toggle("active");
+
+        if (parent.classList.contains("active")) {
+            arrow.textContent = "▼"; // Down arrow when expanded
+        } else {
+            arrow.textContent = "▲"; // Up arrow when collapsed
+        }
+    }
+
+</script>

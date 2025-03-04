@@ -18,5 +18,23 @@ namespace CelestePrime.Controllers
         {
             return View();
         }
+
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Amenities()
+        {
+            return View();
+        }
+        public IActionResult FAQ()
+        {
+            return View();
+        }
+        public IActionResult HomeforSale()
+        {
+            return View();
+        }
     }
 }

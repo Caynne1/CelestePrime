@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Amenities";
+}
+
+<style>
+    .amenities-section {
+        text-align: center;
+        padding: 60px 0;
+        background-color: #fff;
+    }
+
+    .section-title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .highlight {
+        color: #5a6b4a;
+        text-decoration: underline;
+    }
+
+    .amenities-content {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .amenities-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .amenity-item {
+        width: 30%;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .amenity-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .amenity-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .amenity-item h3 {
+            font-size: 22px;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .amenity-item p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+    .learn-more {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #5a6b4a;
+        color: #5a6b4a;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+    }
+
+        .learn-more:hover {
+            background: #5a6b4a;
+            color: #fff;
+        }
+</style>
+
+<section class="amenities-section">
+    <div class="container">
+        <h2 class="section-title">Enjoy Our <span class="highlight">Exceptional</span> Community Amenities</h2>
+        <div class="amenities-content">
+            <p>
+                At Celeste Prime, we believe that exceptional amenities enhance the quality of life for our residents.
+                Our community is designed to offer a perfect blend of recreation, relaxation, and social interaction.
+                Explore the various amenities that make Celeste Prime a truly special place to call home.
+                We are committed to providing a vibrant and engaging environment for all our residents.
+            </p>
+        </div>
+        <div class="amenities-grid">
+            <div class="amenity-item">
+                <img src="~/images/pool.jpg" alt="Community Swimming Pool">
+                <h3>Community Swimming Pool</h3>
+                <p>
+                    Take a refreshing dip in our sparkling community pool. It's the perfect place to unwind on a hot day or socialize with neighbors.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+
+            <div class="amenity-item">
+                <img src="~/images/gym.jpg" alt="Fitness Center">
+                <h3>State-of-the-Art Fitness Center</h3>
+                <p>
+                    Stay active and healthy in our modern fitness center, equipped with the latest cardio and strength-training equipment.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+
+            <div class="amenity-item">
+                <img src="~/images/sports court.jpg" alt="Tennis and Sports Courts">
+                <h3>Tennis and Sports Courts</h3>
+                <p>
+                    Enjoy a friendly match on our well-maintained tennis courts, perfect for all skill levels.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
