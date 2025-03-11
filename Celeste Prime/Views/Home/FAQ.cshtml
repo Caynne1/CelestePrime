@@ -3,10 +3,6 @@
 }
 
 <style>
-    body {
-        font-family: "Arial", sans-serif;
-        color: #333;
-    }
 
     .faq-container, .hoa-container, .involve-container {
         max-width: 1100px;
@@ -230,18 +226,18 @@
 
 
 <script>
-     function toggleActivity(element) {
-        let parent = element.parentElement;
-        let arrow = element.querySelector("span");
-        let paragraph = parent.querySelector("p");
+    document.querySelectorAll('.faq-box, .hoa-box').forEach(item => {
+        item.addEventListener('click', () => {
+            let arrow = item.querySelector("h3 span");
+            let paragraph = item.querySelector("p");
 
-        parent.classList.toggle("active");
+            item.classList.toggle("active");
 
-        if (parent.classList.contains("active")) {
-            arrow.textContent = "▼"; // Down arrow when expanded
-        } else {
-            arrow.textContent = "▲"; // Up arrow when collapsed
-        }
-    }
-
+            if (item.classList.contains("active")) {
+                arrow.textContent = "▼"; // Down arrow when expanded
+            } else {
+                arrow.textContent = "▲"; // Up arrow when collapsed
+            }
+        });
+    });
 </script>

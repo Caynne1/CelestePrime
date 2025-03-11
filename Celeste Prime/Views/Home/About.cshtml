@@ -1,181 +1,258 @@
 ﻿@{
     ViewData["Title"] = "About Us";
-    Layout = "~/Views/Shared/_Layout.cshtml"; // Ensures page uses the site's layout
 }
 
-<section id="about" class="container mt-5">
-    <div class="row align-items-center">
-        <!-- Left Text Content -->
-        <div class="col-md-6">
-            <h1 class="fw-bold">Discover Celeste Prime's Essence</h1>
-            <p class="lead">
-                At Celeste Prime, we believe in creating a community that embodies elegance and comfort.
-                Our subdivision, founded in <strong>2020</strong>, is designed to foster connections among residents
-                while providing a high quality of life.
-            </p>
-
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <h3 class="fw-bold">100%</h3>
-                    <p>Community engagement ensures every voice is heard.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="fw-bold">5 years</h3>
-                    <p>Committed to sustainability for future generations.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="fw-bold">4 values</h3>
-                    <p>Community Engagement, Quality Living, Sustainability, and Integrity.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="fw-bold">Meet Our Team</h3>
-                    <p>Get to know the people making Celeste Prime a better place.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Image Section -->
-        <div class="col-md-6 text-center">
-            <img src="~/images/about.jpg" alt="Celeste Prime Community" class="img-fluid rounded shadow-lg">
-        </div>
-    </div>
-</section>
-    <!-- Discover Our Story Section (Inside a Container with Matching Background & White Text) -->
-    <section class="story-section">
-        <div class="container">
-        <h2 class="text-dark text-left">Discover Our Story</h2>
-        <p class="text-dark text-center">
-                At Celeste Prime, we are dedicated to creating a vibrant community where residents can thrive.
-                Our mission is to foster a sense of belonging and quality living for all homeowners.
-            </p>
-
-            <div class="row text-center text-white mt-4">
-                <div class="col-md-4">
-                    <h4>Our History</h4>
-                    <p>
-                        Founded in 2020, Celeste Prime was developed to create a harmonious living environment
-                        that balances luxury and comfort.
-                    </p>
-                </div>
-
-                <div class="col-md-4">
-                    <h4>Our Mission</h4>
-                    <p>
-                        We strive to provide a beautiful and welcoming community where residents can enjoy a high quality of life.
-                    </p>
-                </div>
-
-                <div class="col-md-4">
-                    <h4>Our Values</h4>
-                    <p>
-                        We believe in Community Engagement, Quality Living, Sustainability, and Integrity.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section id="team" class="container mt-5">
-    <h2 class="fw-bold text-center">Meet the People Behind Celeste Prime</h2>
-    <p class="text-center lead">The visionaries, developers, and managers ensuring our community thrives.</p>
-
-    <div class="row justify-content-center mt-4">
-        <!-- Founder / Owner -->
-        <div class="col-md-3 text-center">
-            <img src="~/images/elven.jpg" class="team-img rounded-circle shadow-sm" alt="Founder">
-            <h4 class="fw-bold mt-3">Elven Diaz</h4>
-            <p class="text-muted">Founder & CEO</p>
-            <p>Elven envisioned Celeste Prime as a model of excellence in community living.</p>
-        </div>
-
-        <!-- Admin -->
-        <div class="col-md-3 text-center">
-            <img src="~/images/claire.jpg" class="team-img rounded-circle shadow-sm" alt="Admin">
-            <h4 class="fw-bold mt-3">Claire Gabato</h4>
-            <p class="text-muted">Website Administrator</p>
-            <p>Claire ensures the website runs smoothly, managing security and user accounts.</p>
-        </div>
-
-        <!-- Creator -->
-        <div class="col-md-3 text-center">
-            <img src="~/images/caynne.jpg" class="team-img rounded-circle shadow-sm" alt="Creator">
-            <h4 class="fw-bold mt-3">Caynne Panibon</h4>
-            <p class="text-muted">Website Creator & Developer</p>
-            <p>Caynne designed and developed the Celeste Prime website, ensuring its efficiency.</p>
-        </div>
-
-        <!-- Management Team -->
-        <div class="col-md-3 text-center">
-            <img src="~/images/vylette.jpg" class="team-img rounded-circle shadow-sm" alt="Manager">
-            <h4 class="fw-bold mt-3">Vylette Casinillo</h4>
-            <p class="text-muted">Community Manager</p>
-            <p>Vylette leads our operations, making Celeste Prime a better place for all residents.</p>
-        </div>
-    </div>
-</section>
-
-
-<!-- Add Custom Styles -->
 <style>
-    #about, #team {
+    .about-section {
         padding: 60px 0;
     }
 
-    h1, h2 {
-        font-size: 2.5rem;
+    .about-title {
         font-weight: bold;
+        color: #22333B;
+        margin-bottom: 20px;
     }
 
-    p.lead {
-        font-size: 1.2rem;
-        color: #555;
+    .about-text {
+        color: #6c757d;
+        font-size: 16px;
     }
 
-    .fw-bold {
-        font-size: 1.5rem;
-        color: black;
+    .about-img {
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .team-img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border: 3px solid #ddd;
+    .about-stats {
+        padding: 40px 0;
+        background: #FAEDCD;
+        margin-top: 40px;
+        border-radius: 10px;
     }
 
-    .text-muted {
-        color: #777;
+    .stat-number {
+        font-size: 32px;
+        font-weight: bold;
+        color: #22333B;
     }
 
-    /* Discover Our Story Section */
-    .story-section {
-        background-color: #f4f4f4; /* Adjust this if needed */
-        padding: 60px 20px;
+    .stat-text {
+        font-size: 14px;
+        color: #6c757d;
     }
 
-        .story-section h2,
-        .story-section p,
-        .story-section h4 {
-            color: #333; /* Darker text color for better contrast */
-        }
 
+     .testimonials {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f9f9f9;
+    }
 
-    .story-details {
+    .testimonial-slider {
         display: flex;
-        justify-content: center;
-        gap: 50px;
-        margin-top: 30px;
-        flex-wrap: wrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding: 20px;
+        scrollbar-width: none;
     }
 
-        .story-details div {
-            max-width: 300px;
-            text-align: center;
+    .testimonial {
+        flex: 0 0 auto;
+        width: 300px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        scroll-snap-align: center;
+    }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
 
-        .story-details h4 {
-            font-size: 22px;
-            font-weight: bold;
-            margin-top: 10px;
+        .testimonial h4 {
+            margin: 10px 0 5px;
+            font-size: 18px;
         }
+
+        .testimonial span {
+            color: gray;
+            font-size: 14px;
+        }
+
+
+    .agents-section {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+        .agents-section h2 {
+            font-weight: bold;
+            color: #22333B;
+        }
+
+        .agents-section p {
+            color: #6c757d;
+        }
+
+    .agent-card {
+        display: inline-block;
+        width: 220px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .agent-img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid black;
+        margin-bottom: 10px;
+    }
+
+    .agent-name {
+        font-weight: bold;
+        color: #22333B;
+        font-size: 16px;
+    }
+
+    .agent-title {
+        color: #6c757d;
+        font-size: 14px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 18px;
+            color: #22333B;
+            transition: color 0.3s ease;
+        }
+
+            .social-icons a:hover {
+                color: green;
+            }
 </style>
+
+<div class="about-section container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="~/images/people.jpg" class="img-fluid about-img" alt="Community Living">
+        </div>
+        <div class="col-md-6">
+            <h2 class="about-title">We Put Our Residents First</h2>
+            <p class="about-text">Celeste Prime is a thriving homeowners subdivision dedicated to providing a safe, peaceful, and well-maintained community for all residents. We prioritize excellent services, modern amenities, and a welcoming neighborhood that fosters strong community values.</p>
+            <p class="about-text">Our goal is to create a space where families can grow, friendships can flourish, and everyone feels at home.</p>
+        </div>
+    </div>
+</div>
+
+
+<section class="testimonials">
+    <h2>Happy Clients</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial">
+            <img src="placeholder1.jpg" alt="James Dave">
+            <p>"Great experience! The service was top-notch and exceeded my expectations."</p>
+            <h4>James Dave</h4>
+            <span>Business Owner</span>
+        </div>
+        <div class="testimonial">
+            <img src="placeholder2.jpg" alt="Sage Eieger">
+            <p>"I highly recommend them! Professional and very responsive."</p>
+            <h4>Sage Eieger</h4>
+            <span>Marketing Manager</span>
+        </div>
+        <div class="testimonial">
+            <img src="placeholder3.jpg" alt="Daile Hope">
+            <p>"Exceptional service! I will definitely come back again."</p>
+            <h4>Daile Hope</h4>
+            <span>Freelancer</span>
+        </div>
+        <div class="testimonial">
+            <img src="placeholder4.jpg" alt="Andrei Cobb">
+            <p>"A seamless experience from start to finish. Very satisfied!"</p>
+            <h4>Andrei Cobb</h4>
+            <span>Software Engineer</span>
+        </div>
+        <div class="testimonial">
+            <img src="placeholder5.jpg" alt="Ricco Blank">
+            <p>"They truly care about their clients. Highly recommend!"</p>
+            <h4>Ricco Blank</h4>
+            <span>Consultant</span>
+        </div>
+        <div class="testimonial">
+            <img src="placeholder6.jpg" alt="Queen Cee">
+            <p>"Absolutely wonderful experience. Will tell all my friends!"</p>
+            <h4>Queen Cee</h4>
+            <span>Entrepreneur</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- Agents Section -->
+<div class="agents-section">
+    <h2>OUR AGENTS</h2>
+    <p>The best out there</p>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 agent-card">
+                <img src="~/images/elven.jpg" class="agent-img" alt="Elven Diaz">
+                <div class="agent-name">ELVEN DIAZ</div>
+                <div class="agent-title">Real Estate Agent</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 agent-card">
+                <img src="~/images/caynne.jpg" class="agent-img" alt="Caynne Panibon">
+                <div class="agent-name">CAYNNE PANIBON</div>
+                <div class="agent-title">Real Estate Agent</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 agent-card">
+                <img src="~/images/claire.jpg" class="agent-img" alt="Claire Gabato">
+                <div class="agent-name">CLAIRE GABATO</div>
+                <div class="agent-title">Real Estate Agent</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 agent-card">
+                <img src="~/images/vylette.jpg" class="agent-img" alt="Vylette Casinillo">
+                <div class="agent-name">VYLETTE CASINILLO</div>
+                <div class="agent-title">Real Estate Agent</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include FontAwesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
